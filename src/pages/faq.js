@@ -1,7 +1,3 @@
-// src/pages/faq.js
-import NavBar from '../components/NavBar';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const FAQPage = () => {
   // Replace with actual FAQ data or dummy content
@@ -13,8 +9,6 @@ const FAQPage = () => {
 
   return (
     <div>
-        <NavBar />
-        <Header />
       <main className="container mx-auto">
         <h1 className="text-4xl font-bold mt-8">FAQ</h1>
         <div className="mt-4">
@@ -26,7 +20,6 @@ const FAQPage = () => {
           ))}
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

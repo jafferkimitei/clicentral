@@ -2,7 +2,9 @@
 
 // Import necessary modules
 import '../../styles/globals.css'; // Global styles
-import Header from '../components/Header'; // Header component
+import Header from '../components/Header'; 
+import Footer from '../components/Footer';
+// Header component
 import { useEffect } from 'react';
 import { useRouter } from 'next/router'; // Next.js router
 
@@ -26,13 +28,15 @@ function MyApp({ Component, pageProps }) {
   }, [router.events]);
 
   return (
-    <div>
-      {/* Header component */}
+    <div className="flex flex-col min-h-screen">
       <Header />
-      {/* Render the component based on the route */}
-      <Component {...pageProps} />
+      <main className="flex-grow">
+        <Component {...pageProps} />
+      </main>
+      <Footer />
     </div>
   );
-}
+};
+
 
 export default MyApp;

@@ -1,7 +1,4 @@
-// src/pages/contact.js
-import NavBar from '../components/NavBar';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 import ContactForm from '../components/Forms/ContactForm';
 import Card from '../components/UI/Card';
 import Button from '../components/UI/Button';
@@ -16,8 +13,6 @@ const ContactPage = () => {
 
   return (
     <div>
-      <NavBar />
-      <Header />
       <main className="container mx-auto">
         <h1 className="text-4xl font-bold mt-8">Contact Us</h1>
         <div className="mt-4">
@@ -45,7 +40,6 @@ const ContactPage = () => {
         {/* Example of using Spinner component */}
         <Spinner className="mt-8" />
       </main>
-      <Footer />
     </div>
   );
 };

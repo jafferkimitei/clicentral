@@ -1,7 +1,4 @@
-// src/pages/news.js
-import NavBar from '../components/NavBar';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 
 const NewsPage = () => {
   // Replace with actual data fetching or dummy content
@@ -13,8 +10,6 @@ const NewsPage = () => {
 
   return (
     <div>
-        <NavBar />
-        <Header />
       <main className="container mx-auto">
         <h1 className="text-4xl font-bold mt-8">News</h1>
         <div className="mt-4">
@@ -26,7 +21,6 @@ const NewsPage = () => {
           ))}
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

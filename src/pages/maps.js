@@ -1,7 +1,3 @@
-// src/pages/maps.js
-import NavBar from '../components/NavBar';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const MapsPage = () => {
   return (

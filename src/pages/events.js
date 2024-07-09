@@ -1,7 +1,3 @@
-// src/pages/events.js
-import NavBar from '../components/NavBar';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const EventsPage = () => {
   // Replace with actual data fetching or dummy content
@@ -13,8 +9,6 @@ const EventsPage = () => {
 
   return (
     <div>
-        <NavBar />
-        <Header />
       <main className="container mx-auto">
         <h1 className="text-4xl font-bold mt-8">Events</h1>
         <div className="mt-4">
@@ -27,7 +21,6 @@ const EventsPage = () => {
           ))}
         </div>
       </main>
-      <Footer />
     </div>
   );
 };
