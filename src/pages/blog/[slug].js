@@ -1,6 +1,4 @@
-// src/pages/blog/[slug].js
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+
 
 // Simulated data for demonstration
 const posts = [
@@ -14,14 +12,12 @@ const BlogPostPage = ({ post }) => {
 
   return (
     <div>
-      <Header />
       <main className="container mx-auto">
         <article className="mt-8">
           <h1 className="text-4xl font-bold">{post.title}</h1>
           <p className="mt-4">{post.content}</p>
         </article>
       </main>
-      <Footer />
     </div>
   );
 };

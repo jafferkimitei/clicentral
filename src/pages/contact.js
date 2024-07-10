@@ -33,9 +33,9 @@ const ContactPage = () => {
         </Button>
 
         {/* Example of using Modal component */}
-        <Modal isOpen={true} onClose={() => console.log('Modal closed')}>
+        {/* <Modal isOpen={true} onClose={() => console.log('Modal closed')}>
           <p className="text-lg">Modal content goes here.</p>
-        </Modal>
+        </Modal> */}
 
         {/* Example of using Spinner component */}
         <Spinner className="mt-8" />

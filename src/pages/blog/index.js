@@ -1,6 +1,4 @@
-// src/pages/blog/index.js
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+
 
 const BlogIndexPage = () => {
   // Replace with actual data fetching or dummy content
@@ -12,7 +10,6 @@ const BlogIndexPage = () => {
 
   return (
     <div>
-      <Header />
       <main className="container mx-auto">
         <h1 className="text-4xl font-bold mt-8">Blog</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
@@ -25,7 +22,6 @@ const BlogIndexPage = () => {
           ))}
         </div>
       </main>
-      <Footer />
     </div>
   );
 };
