@@ -19,6 +19,7 @@ module.exports = {
           sky: '#87CEEB', // Sky blue
           yellow: '#FF5F00', // Sunrise Orange
           teal: '#EBF4F6',
+          sandy: '#e76f51',
         },
       },
     },

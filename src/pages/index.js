@@ -1,8 +1,6 @@
-// src/pages/index.js
+
 import Head from 'next/head';
 import { useState } from 'react';
-
-
 
 
 export default function Home() {
@@ -38,16 +36,17 @@ export default function Home() {
                     <h1 className="text-white text-5xl font-bold mb-4">Together We Can Combat Climate Change</h1>
                     <p className="text-white text-xl mb-8">Join us in the fight for a sustainable future</p>
                     <div>
-                      <a href="/learn-more" className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Learn More</a>
-                      <a href="/donate" className="bg-green-500 text-white px-4 py-2 rounded-md ml-4 hover:bg-green-600">Donate Now</a>
+                      <a href="/maps" className="border-2 border-blue-500 text-blue-500 px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white">Maps visualizer</a>
+                      <a href="/donate" className="bg-blue-500 text-white px-4 py-2 rounded-md ml-4 hover:bg-blue-600">Donate Now</a>
                     </div>
+
                   </div>
                 </section>
 
 
         {/* About Climate Change */}
         <section className="w-full p-8 bg-primary text-primary">
-            <div className="max-w-7xl mx-auto ">
+            <div className="w-11/12 md:w-10/12 mx-auto py-16">
               <h2 className="text-4xl font-bold mb-6 text-center text-secondary-blue">About Climate Change</h2>
               <p className="mb-8 text-lg leading-relaxed text-center text-gray-600">
                 Climate change refers to long-term changes in the Earth's climate patterns, primarily due to human activities such as burning fossil fuels, deforestation, and industrial processes. These activities increase the concentration of greenhouse gases in the atmosphere, leading to global warming and a host of other environmental impacts.
@@ -72,8 +71,8 @@ export default function Home() {
 
         {/* Latest News & Articles */}
         <section className="relative w-full p-8 bg-cover bg-center" style={{ backgroundImage: 'url("../images/news1.jpg")' }}>
-  <div className="absolute inset-0 bg-black opacity-50"></div>
-  <div className="relative max-w-7xl mx-auto text-gray-100">
+  <div className="absolute inset-0 bg-black opacity-85"></div>
+  <div className="relative w-11/12 md:w-10/12 mx-auto py-16 text-gray-100">
     <h2 className="text-4xl font-bold mb-8 text-center text-white">Latest News & Articles</h2>
     <div className="flex flex-wrap -mx-4">
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
@@ -102,7 +101,7 @@ export default function Home() {
     <div className="text-center mt-8">
   <a 
     href="/blog" 
-    className="text-primary text-lg px-4 py-2 rounded transition duration-300 ease-in-out hover:bg-white hover:text-green-500 hover:rounded-lg"
+    className="text-primary text-lg px-4 py-2 border-2 border-white rounded transition duration-300 ease-in-out hover:bg-white hover:text-black hover:rounded-lg"
   >
     View All
   </a>
@@ -116,7 +115,7 @@ export default function Home() {
 
         {/* Impact & Solutions */}
         <section className="w-full p-8 bg-primary text-primary">
-  <div className="max-w-7xl mx-auto">
+  <div className="w-11/12 md:w-10/12 py-16 mx-auto">
     <h2 className="text-4xl font-bold mb-8 text-center text-secondary-blue">Impact & Solutions</h2>
     <div className="flex flex-wrap -mx-4">
       <div className="w-full md:w-1/2 p-4">
@@ -138,9 +137,9 @@ export default function Home() {
 
         {/* Interactive Features */}
         <section className="relative w-full p-8 bg-cover bg-center" style={{ backgroundImage: 'url("../images/news1.jpg")' }}>
-  <div className="absolute inset-0 bg-black opacity-50"></div>
-  <div className="relative max-w-7xl mx-auto text-gray-100">
-    <h2 className="text-4xl font-bold mb-8 text-center text-secondary-blue">Interactive Features</h2>
+  <div className="absolute inset-0 bg-black opacity-85"></div>
+  <div className="relative w-11/12 md:w-10/12 py-16 mx-auto text-gray-100">
+    <h2 className="text-4xl font-bold mb-8 text-center text-primary">Interactive Features</h2>
     <div className="flex flex-wrap -mx-4">
       <div className="w-full md:w-1/2 p-4">
         <div className="bg-primary bg-opacity-75 backdrop-blur-sm p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
@@ -163,8 +162,8 @@ export default function Home() {
 
 
         {/* Get Involved */}
-        <section className="w-full p-8 bg-primary text-primary">
-  <div className="max-w-7xl mx-auto">
+        <section className="w-full p-8 bg-primary text-primary"> 
+  <div className="w-11/12 md:w-10/12 py-16 mx-auto">
     <h2 className="text-4xl font-bold mb-8 text-center text-secondary-blue">Get Involved</h2>
     <div className="flex flex-wrap -mx-4">
       <div className="w-full md:w-1/3 p-4">
@@ -194,19 +193,20 @@ export default function Home() {
 
 
         {/* Donation Section */}
-        <section className="w-full p-8 bg-secondary-teal text-secondary-blue bg-cover bg-center"
-  style={{backgroundImage: 'url("../images/donate.jpg")'}}>
-  <div className="max-w-7xl mx-auto">
-    <h2 className="text-4xl font-bold mb-8 text-center">Support Us</h2>
+       {/* Donation Section */}
+<section className="relative w-full p-8 bg-cover bg-center" style={{ backgroundImage: 'url("../images/donate.jpg")' }}>
+  <div className="absolute inset-0 bg-black opacity-85"></div>
+  <div className="relative w-11/12 md:w-10/12 py-16 mx-auto text-gray-100">
+    <h2 className="text-4xl font-bold mb-8 text-center text-primary">Support Us</h2>
     <div className="flex flex-wrap -mx-4 items-center">
       <div className="w-full md:w-1/2 p-4">
-        <div className="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-          <h3 className="text-2xl font-semibold mb-4">Why Donate?</h3>
-          <p>Explanation of how donations are used to support climate change initiatives and projects...</p>
+        <div className="bg-primary bg-opacity-75 backdrop-blur-sm p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+          <h3 className="text-2xl font-semibold mb-4 text-gray-900">Why Donate?</h3>
+          <p className="mb-4 text-gray-800">Explanation of how donations are used to support climate change initiatives and projects...</p>
         </div>
       </div>
       <div className="w-full md:w-1/2 p-4 flex items-center justify-center">
-        <a href="/donate" className="bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-600 text-xl font-bold">Donate Now</a>
+        <a href="/donate" className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 text-xl font-bold">Donate Now</a>
       </div>
     </div>
   </div>
@@ -214,9 +214,10 @@ export default function Home() {
 
 
 
+
         {/* Testimonials */}
         <section className="w-full p-8 bg-secondary-teal text-primary">
-  <div className="max-w-7xl mx-auto">
+  <div className="w-11/12 md:w-10/12 py-16 mx-auto">
     <h2 className="text-3xl font-bold mb-8 text-center text-secondary-blue">Testimonials</h2>
     <div className="flex flex-wrap -mx-4 text-black">
       <div className="w-full md:w-1/3 p-4">
@@ -253,7 +254,7 @@ export default function Home() {
 
         {/* Newsletter Signup */}
         <section className="w-full p-8 bg-gray-800">
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="max-w-7xl mx-auto py-16 text-center">
         <h2 className="text-3xl font-bold mb-6 text-primary">Stay Updated</h2>
         <p className="mb-6 text-lg text-secondary-yellow">Subscribe to our newsletter to get the latest updates on climate change.</p>
         <form className="flex justify-center items-center max-w-lg mx-auto" onSubmit={handleSubmit}>

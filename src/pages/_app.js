@@ -1,15 +1,13 @@
-// pages/_app.js
 
-// Import necessary modules
-import '../../styles/globals.css'; // Global styles
-import Header from '../components/Header'; 
+import '../../styles/globals.css'; 
+import Navbar from '../components/NavBar'; 
 import Footer from '../components/Footer';
-// Header component
+
 import { useEffect } from 'react';
-import { useRouter } from 'next/router'; // Next.js router
+import { useRouter } from 'next/router'; 
 
 function MyApp({ Component, pageProps }) {
-  // Example: Track page view with router events
+
   const router = useRouter();
 
   useEffect(() => {
@@ -18,10 +16,10 @@ function MyApp({ Component, pageProps }) {
       // Add your analytics tracking here
     };
 
-    // When the component mounts, subscribe to route changes
+    
     router.events.on('routeChangeComplete', handleRouteChange);
 
-    // If the component is unmounted, unsubscribe
+  
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange);
     };
@@ -29,7 +27,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
+      <Navbar />
       <main className="flex-grow">
         <Component {...pageProps} />
       </main>
