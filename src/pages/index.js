@@ -1,5 +1,6 @@
 
 import Head from 'next/head';
+import Image from 'next/image';
 import { useState } from 'react';
 
 
@@ -76,24 +77,24 @@ export default function Home() {
     <h2 className="text-4xl font-bold mb-8 text-center text-white">Latest News & Articles</h2>
     <div className="flex flex-wrap -mx-4">
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
-        <div className="bg-white bg-opacity-50 backdrop-blur-sm p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-          <h3 className="text-2xl font-semibold mb-4 text-gray-900">Article Title 1</h3>
+        <div className="bg-primary bg-opacity-75  backdrop-blur-sm p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+          <h3 className="text-2xl font-semibold mb-4 text-secondary-blue">Article Title 1</h3>
           <p className="mb-4 text-gray-800">Summary of the article...</p>
-          <a href="/blog/article-slug-1" className="text-blue-500 hover:underline">Read more</a>
+          <a href="/blog/article-slug-1" className="text-primary hover:underline">Read more</a>
         </div>
       </div>
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
-        <div className="bg-white bg-opacity-50 backdrop-blur-sm p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-          <h3 className="text-2xl font-semibold mb-4 text-gray-900">Article Title 2</h3>
+        <div className=" bg-primary bg-opacity-75 backdrop-blur-sm p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+          <h3 className="text-2xl font-semibold mb-4 text-secondary-blue">Article Title 2</h3>
           <p className="mb-4 text-gray-800">Summary of the article...</p>
-          <a href="/blog/article-slug-2" className="text-blue-500 hover:underline">Read more</a>
+          <a href="/blog/article-slug-2" className="text-primary hover:underline">Read more</a>
         </div>
       </div>
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
-        <div className="bg-white bg-opacity-50 backdrop-blur-sm p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-          <h3 className="text-2xl font-semibold mb-4 text-gray-900">Article Title 3</h3>
+        <div className="bg-primary bg-opacity-75  backdrop-blur-sm p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+          <h3 className="text-2xl font-semibold mb-4 text-secondary-blue">Article Title 3</h3>
           <p className="mb-4 text-gray-800">Summary of the article...</p>
-          <a href="/blog/article-slug-3" className="text-blue-500 hover:underline">Read more</a>
+          <a href="/blog/article-slug-3" className="text-primary hover:underline">Read more</a>
         </div>
       </div>
       {/* Add more articles similarly */}
@@ -143,16 +144,16 @@ export default function Home() {
     <div className="flex flex-wrap -mx-4">
       <div className="w-full md:w-1/2 p-4">
         <div className="bg-primary bg-opacity-75 backdrop-blur-sm p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-          <h3 className="text-2xl font-semibold mb-4 text-gray-900">Carbon Footprint Calculator</h3>
+          <h3 className="text-2xl font-semibold mb-4 text-secondary-blue">Carbon Footprint Calculator</h3>
           <p className="mb-4 text-gray-800">Interactive tool for visitors to calculate their carbon footprint...</p>
-          <a href="/calculators/carbon-footprint" className="text-blue-500 hover:underline">Try it out</a>
+          <a href="/calculators/carbon-footprint" className="text-primary hover:underline">Try it out</a>
         </div>
       </div>
       <div className="w-full md:w-1/2 p-4">
         <div className="bg-primary bg-opacity-75 backdrop-blur-sm p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-          <h3 className="text-2xl font-semibold mb-4 text-gray-900">Climate Change Map</h3>
+          <h3 className="text-2xl font-semibold mb-4 text-secondary-blue">Climate Change Map</h3>
           <p className="mb-4 text-gray-800">Visual map showing the impact of climate change globally...</p>
-          <a href="/maps" className="text-blue-500 hover:underline">Explore the map</a>
+          <a href="/maps" className="text-primary hover:underline">Explore the map</a>
         </div>
       </div>
     </div>
@@ -162,28 +163,28 @@ export default function Home() {
 
 
         {/* Get Involved */}
-        <section className="w-full p-8 bg-primary text-primary"> 
+        <section className="w-full p-8 bg-secondary-teal"> 
   <div className="w-11/12 md:w-10/12 py-16 mx-auto">
     <h2 className="text-4xl font-bold mb-8 text-center text-secondary-blue">Get Involved</h2>
     <div className="flex flex-wrap -mx-4">
       <div className="w-full md:w-1/3 p-4">
-        <div className="bg-secondary-blue p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-          <h3 className="text-2xl font-semibold mb-4">Volunteer Opportunities</h3>
-          <p className="mb-4">Information on how visitors can volunteer...</p>
-          <a href="/volunteer" className="text-green-500 hover:underline">Learn more</a>
+        <div className="bg-primary p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+          <h3 className="text-2xl font-semibold mb-4 text-secondary-blue">Volunteer Opportunities</h3>
+          <p className="mb-4 text-gray-800">Information on how visitors can volunteer...</p>
+          <a href="/volunteer" className="text-blue-500 hover:underline">Learn more</a>
         </div>
       </div>
       <div className="w-full md:w-1/3 p-4">
-        <div className="bg-secondary-blue p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-          <h3 className="text-2xl font-semibold mb-4">Events</h3>
-          <p className="mb-4">Upcoming events related to climate change...</p>
+        <div className="bg-primary p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+          <h3 className="text-2xl font-semibold mb-4 text-secondary-blue">Events</h3>
+          <p className="mb-4 text-gray-800">Upcoming events related to climate change...</p>
           <a href="/events" className="text-blue-500 hover:underline">View events</a>
         </div>
       </div>
       <div className="w-full md:w-1/3 p-4">
-        <div className="bg-secondary-blue p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-          <h3 className="text-2xl font-semibold mb-4">Community Actions</h3>
-          <p className="mb-4">Ways to participate in community actions...</p>
+        <div className="bg-primary p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+          <h3 className="text-2xl font-semibold mb-4 text-secondary-blue">Community Actions</h3>
+          <p className="mb-4 text-gray-800">Ways to participate in community actions...</p>
           <a href="/community" className="text-blue-500 hover:underline">Get involved</a>
         </div>
       </div>
@@ -193,7 +194,7 @@ export default function Home() {
 
 
         {/* Donation Section */}
-       {/* Donation Section */}
+      
 <section className="relative w-full p-8 bg-cover bg-center" style={{ backgroundImage: 'url("../images/donate.jpg")' }}>
   <div className="absolute inset-0 bg-black opacity-85"></div>
   <div className="relative w-11/12 md:w-10/12 py-16 mx-auto text-gray-100">
@@ -201,7 +202,7 @@ export default function Home() {
     <div className="flex flex-wrap -mx-4 items-center">
       <div className="w-full md:w-1/2 p-4">
         <div className="bg-primary bg-opacity-75 backdrop-blur-sm p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-          <h3 className="text-2xl font-semibold mb-4 text-gray-900">Why Donate?</h3>
+          <h3 className="text-2xl font-semibold mb-4 text-secondary-blue">Why Donate?</h3>
           <p className="mb-4 text-gray-800">Explanation of how donations are used to support climate change initiatives and projects...</p>
         </div>
       </div>
@@ -217,39 +218,39 @@ export default function Home() {
 
         {/* Testimonials */}
         <section className="w-full p-8 bg-secondary-teal text-primary">
-  <div className="w-11/12 md:w-10/12 py-16 mx-auto">
-    <h2 className="text-3xl font-bold mb-8 text-center text-secondary-blue">Testimonials</h2>
-    <div className="flex flex-wrap -mx-4 text-black">
-      <div className="w-full md:w-1/3 p-4">
-        <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
-          <img src="../images/Person1.jpg" alt="Person A" className="w-24 h-24 rounded-full mb-4"/>
-          <blockquote className="text-center">
-            <p className="text-lg italic mb-4">"This organization has made a tremendous impact on our community..."</p>
-            <footer className="mt-4 text-right">- Person A</footer>
-          </blockquote>
+      <div className="w-11/12 md:w-10/12 py-16 mx-auto">
+        <h2 className="text-3xl font-bold mb-8 text-center text-secondary-blue">Testimonials</h2>
+        <div className="flex flex-wrap -mx-4 text-black">
+          <div className="w-full md:w-1/3 p-4 flex">
+            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-between w-full">
+              <Image src="/images/Person1.jpg" alt="Person A" width={96} height={96} className="rounded-full mb-4"/>
+              <blockquote className="text-center flex-grow">
+                <p className="text-lg italic mb-4">"This organization has made a tremendous impact on our community..."</p>
+                <footer className="mt-4 text-right">- Person A</footer>
+              </blockquote>
+            </div>
+          </div>
+          <div className="w-full md:w-1/3 p-4 flex">
+            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-between w-full">
+              <Image src="/images/Person2.jpg" alt="Person B" width={96} height={96} className="rounded-full mb-4"/>
+              <blockquote className="text-center flex-grow">
+                <p className="text-lg italic mb-4">"I learned so much about climate change through their resources..."</p>
+                <footer className="mt-4 text-right">- Person B</footer>
+              </blockquote>
+            </div>
+          </div>
+          <div className="w-full md:w-1/3 p-4 flex">
+            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-between w-full">
+              <Image src="/images/Person3.jpg" alt="Person C" width={96} height={96} className="rounded-full mb-4"/>
+              <blockquote className="text-center flex-grow">
+                <p className="text-lg italic mb-4">"Their events are always informative and inspiring..."</p>
+                <footer className="mt-4 text-right">- Person C</footer>
+              </blockquote>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="w-full md:w-1/3 p-4">
-        <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
-          <img src="../images/Person2.jpg" alt="Person B" className="w-24 h-24 rounded-full mb-4"/>
-          <blockquote className="text-center">
-            <p className="text-lg italic mb-4">"I learned so much about climate change through their resources..."</p>
-            <footer className="mt-4 text-right">- Person B</footer>
-          </blockquote>
-        </div>
-      </div>
-      <div className="w-full md:w-1/3 p-4">
-        <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
-          <img src="../images/Person3.jpg" alt="Person C" className="w-24 h-24 rounded-full mb-4"/>
-          <blockquote className="text-center">
-            <p className="text-lg italic mb-4">"Their events are always informative and inspiring..."</p>
-            <footer className="mt-4 text-right">- Person C</footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
         {/* Newsletter Signup */}
