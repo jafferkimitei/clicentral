@@ -7,19 +7,19 @@ const teamMembers = [
     name: 'Jane Doe',
     role: 'Founder & CEO',
     bio: 'Jane has over 20 years of experience in environmental advocacy and founded our organization to address climate change.',
-    image: '/images/Person1.jpg'
+    image: '../images/Person1.jpg'
   },
   {
     name: 'John Smith',
     role: 'Chief Scientist',
     bio: 'John is a leading climate scientist with numerous publications on climate change and its impacts.',
-    image: '/images/Person1.jpg'
+    image: '../images/Person1.jpg'
   },
   {
     name: 'Emily Johnson',
     role: 'Community Outreach Coordinator',
     bio: 'Emily is passionate about engaging communities and spreading awareness about sustainability practices.',
-    image: '/images/Person1.jpg'
+    image: '../images/Person1.jpg'
   }
 ];
 
@@ -28,13 +28,13 @@ const boardMembers = [
     name: 'Alice Brown',
     role: 'Chairperson',
     bio: 'Alice has been a leader in environmental policy and advocacy for over 15 years.',
-    image: '/images/Person1.jpg'
+    image: '../images/Person1.jpg'
   },
   {
     name: 'Bob Green',
     role: 'Treasurer',
     bio: 'Bob brings his financial expertise to ensure our organization is fiscally responsible and sustainable.',
-    image: '/images/Person1.jpg'
+    image: '../images/Person1.jpg'
   }
 ];
 
