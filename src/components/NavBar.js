@@ -26,7 +26,6 @@ const NavBar = () => {
             <NavLink href="/about" active={router.pathname === '/about'}>About</NavLink>
             <NavLink href="/news" active={router.pathname === '/news'}>News</NavLink>
             <NavLink href="/events" active={router.pathname === '/events'}>Events</NavLink>
-            <NavLink href="/community" active={router.pathname === '/community'}>Community</NavLink>
             <NavLink href="/contact" active={router.pathname === '/contact'}>Contact</NavLink>
           </div>
           {/* Mobile menu button */}
@@ -60,7 +59,6 @@ const NavBar = () => {
               <NavLink href="/about" active={router.pathname === '/about'}>About</NavLink>
               <NavLink href="/news" active={router.pathname === '/news'}>News</NavLink>
               <NavLink href="/events" active={router.pathname === '/events'}>Events</NavLink>
-              <NavLink href="/community" active={router.pathname === '/community'}>Community</NavLink>
               <NavLink href="/contact" active={router.pathname === '/contact'}>Contact</NavLink>
             </div>
           </div>
