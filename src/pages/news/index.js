@@ -1,46 +1,11 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import NewsArticle from '../../components/NewsArticle';
 import Sidebar from '../../components/Sidebar';
-
-const newsArticles = [
-  {
-    id: 1,
-    title: 'Major Climate Change Conference Announced',
-    description: 'World leaders will gather to discuss climate action strategies...',
-    image: '/images/news1.jpg',
-    category: 'Events',
-    date: '2024-07-15',
-  },
-  {
-    id: 2,
-    title: 'New Research on Rising Sea Levels',
-    description: 'A recent study shows alarming rates of sea level rise...',
-    image: '/images/news2.jpg',
-    category: 'Research',
-    date: '2024-07-14',
-  },
-  {
-    id: 3,
-    title: 'Join our community in X(twitter)',
-    description: 'World leaders will gather to discuss climate action strategies...',
-    image: '/images/news1.jpg',
-    category: 'Events',
-    date: '2024-07-15',
-  },
-  {
-    id: 4,
-    title: 'Volunteer opportunities and ways to get involved',
-    description: 'A recent study shows alarming rates of sea level rise...',
-    image: '/images/news2.jpg',
-    category: 'Research',
-    date: '2024-07-14',
-  },
-];
+import newsArticles from '../../data/articles';
 
 const NewsPage = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 min-h-screen">
       <Head>
         <title>News | Clicentral</title>
         <meta name="description" content="Latest news on climate change and environmental actions." />

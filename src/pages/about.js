@@ -40,28 +40,26 @@ const boardMembers = [
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className="bg-gray-100 min-h-screen">
         <Head>
         <title>About Clicentral</title>
         <meta name="description" content="A website focused on climate change awareness and action." />
       </Head>
-      <main className="flex flex-col items-center">
-          {/* About Hero Section */}
-      <section className="relative w-full h-screen">
-      <video className="absolute w-full h-full object-cover" autoPlay loop muted>
-        <source src="../videos/about.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div className="absolute inset-0 bg-black opacity-50"></div>
-      <div className="relative flex flex-col items-center justify-center h-full text-white p-8">
-        <h1 className="text-5xl font-bold mb-4">About Us</h1>
-        <p className="text-xl text-center max-w-2xl">
-          We are dedicated to combating climate change through innovative solutions, education, and community engagement.
-        </p>
-      </div>
-    </section>
+
+      <section className="relative bg-cover bg-center py-20">
+        <video className="absolute inset-0 w-full h-full object-cover" autoPlay loop muted>
+          <source src="/videos/about.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="container mx-auto text-center text-white relative z-10">
+          <h1 className="text-4xl font-bold">About Us</h1>
+          <p className="mt-4 text-lg">We are dedicated to combating climate change through innovative solutions, education, and community engagement.</p>
+        </div>
+      </section>
 
       {/* Mission Section */}
+      <main className="flex flex-col items-center">
       <section className="w-full py-16 bg-secondary-teal">
   <div className="w-11/12 md:w-10/12 mx-auto text-center px-4 md:px-8 lg:px-12">
     <h2 className="text-4xl font-bold mb-8 text-secondary-blue">Our Mission</h2>

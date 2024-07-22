@@ -1,41 +1,7 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-
-const newsArticles = [
-  {
-    id: 1,
-    title: 'Major Climate Change Conference Announced',
-    description: 'World leaders will gather to discuss climate action strategies...',
-    image: '/images/news1.jpg',
-    category: 'Events',
-    date: '2024-07-15',
-  },
-  {
-    id: 2,
-    title: 'New Research on Rising Sea Levels',
-    description: 'A recent study shows alarming rates of sea level rise...',
-    image: '/images/news2.jpg',
-    category: 'Research',
-    date: '2024-07-14',
-  },
-  {
-    id: 3,
-    title: 'Join our community in X(twitter)',
-    description: 'World leaders will gather to discuss climate action strategies...',
-    image: '/images/news1.jpg',
-    category: 'Events',
-    date: '2024-07-15',
-  },
-  {
-    id: 4,
-    title: 'Volunteer opportunities and ways to get involved',
-    description: 'A recent study shows alarming rates of sea level rise...',
-    image: '/images/news2.jpg',
-    category: 'Research',
-    date: '2024-07-14',
-  },
-
-];
+import newsArticles from '../../data/articles';
+import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 const NewsArticlePage = () => {
   const router = useRouter();
@@ -46,20 +12,46 @@ const NewsArticlePage = () => {
     return <p>Loading...</p>;
   }
 
+  const relatedArticles = newsArticles
+    .filter((item) => item.id !== article.id && item.category === article.category)
+    .slice(0, 3);
+
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 min-h-screen">
       <Head>
         <title>{article.title} | Clicentral</title>
         <meta name="description" content={article.description} />
       </Head>
 
       <main className="container mx-auto w-11/12 md:w-10/12 py-10">
-        <article className="bg-primary rounded-lg shadow-md p-4">
+        <article className="bg-white rounded-lg shadow-md p-6 mb-8">
           <img src={article.image} alt={article.title} className="w-full h-64 object-cover rounded-lg mb-4" />
           <h1 className="text-3xl font-bold mb-4 text-gray-800">{article.title}</h1>
           <div className="text-gray-500 text-sm mb-4">{article.date} | {article.category}</div>
-          <p className="text-gray-700">{article.description}</p>
+          <p className="text-gray-700 mb-6">{article.description}</p>
+          <div className="flex justify-between items-center">
+            <div className="text-gray-600">By {article.author}</div>
+            <div className="flex space-x-4">
+              <FaFacebook className="text-blue-600 cursor-pointer" />
+              <FaTwitter className="text-blue-400 cursor-pointer" />
+              <FaLinkedin className="text-blue-700 cursor-pointer" />
+            </div>
+          </div>
         </article>
+
+        <section>
+          <h2 className="text-2xl font-bold mb-4 text-gray-800">Related Articles</h2>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {relatedArticles.map((related) => (
+              <div key={related.id} className="bg-white p-4 rounded-lg shadow-md">
+                <img src={related.image} alt={related.title} className="w-full h-40 object-cover rounded-lg mb-2" />
+                <h3 className="text-lg font-bold text-gray-800">{related.title}</h3>
+                <p className="text-gray-600 text-sm">{related.date} | {related.category}</p>
+                <a href={`/news/${related.id}`} className="text-blue-500 hover:underline mt-2 block">Read More</a>
+              </div>
+            ))}
+          </div>
+        </section>
       </main>
     </div>
   );

@@ -1,8 +1,8 @@
 
 import '../../styles/globals.css'; 
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import Navbar from '../components/NavBar'; 
 import Footer from '../components/Footer';
-
 import { useEffect } from 'react';
 import { useRouter } from 'next/router'; 
 
