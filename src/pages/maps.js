@@ -1,8 +1,29 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
-import { Line, Bar } from 'react-chartjs-2';
+import { Line, Bar} from 'react-chartjs-2';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
 // Load Map dynamically to avoid SSR issues
 const Map = dynamic(() => import('react-map-gl'), { ssr: false });
 
@@ -47,7 +68,7 @@ const MapVisualizerPage = () => {
         <meta name="description" content="Visualize climate trends and data using interactive maps and charts." />
       </Head>
 
-      <section className="relative bg-cover bg-center py-20" style={{ backgroundImage: 'url("/images/climate-bg.jpg")' }}>
+      <section className="relative bg-cover bg-center py-20" style={{ backgroundImage: 'url("../images/donate.jpg")' }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="container mx-auto text-center text-white relative z-10">
           <h1 className="text-4xl font-bold">Climate Trends Visualizer</h1>
