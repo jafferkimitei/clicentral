@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
+import Image from 'next/image';
 import eventsData from '../../data/events'; // Make sure this path is correct for your events data
 
 const EventsPage = () => {
@@ -146,7 +147,7 @@ const EventsPage = () => {
               <div className="md:w-1/3 relative group">
                 <Link legacyBehavior href={`/events/${event.id}`}>
                   <a className="block relative">
-                    <img
+                    <Image
                       src={event.image}
                       alt={event.title}
                       className="w-full h-full object-cover"

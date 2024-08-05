@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image';
 
 const Sidebar = ({ newsArticles }) => {
 
@@ -53,7 +54,7 @@ const Sidebar = ({ newsArticles }) => {
         <ul className="space-y-4">
           {filteredArticles.slice(0, 5).map((article) => (
             <li key={article.id} className="flex">
-              <img src={article.image} alt={article.title} className="w-20 h-20 object-cover rounded-lg mr-4" />
+              <Image src={article.image} alt={article.title} className="w-20 h-20 object-cover rounded-lg mr-4" />
               <div>
                 <h3 className="text-lg font-bold">
                   <Link legacyBehavior href={`/news/${article.id}`}>

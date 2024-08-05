@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import Image from 'next/image';
 import eventsData from '../../data/events'; // Assuming you have events data stored in a separate file
 
 const EventDetailPage = () => {
@@ -27,7 +28,7 @@ const EventDetailPage = () => {
 
         {/* Event Image */}
         <section className="mb-8">
-          <img
+          <Image
             src={event.image}
             alt={event.title}
             className="w-full h-96 object-cover rounded-lg shadow-md"
@@ -79,7 +80,7 @@ const EventDetailPage = () => {
                   <div key={relatedEvent.id} className="bg-gray-100 p-4 rounded-lg shadow-md">
                     <h3 className="text-lg font-bold text-gray-800">{relatedEvent.title}</h3>
                     <p className="text-gray-600">{relatedEvent.date} - {relatedEvent.location}</p>
-                    <img
+                    <Image
                       src={relatedEvent.image}
                       alt={relatedEvent.title}
                       className="w-full h-48 object-cover rounded-lg mt-4 mb-2"

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import NavLink from './NavLink';
+import Image from 'next/image';
 
 const NavBar = () => {
   const router = useRouter();
@@ -17,7 +18,7 @@ const NavBar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <NavLink href="/">
-              <img src="../images/logo2.png" alt="Logo" className="h-20 w-auto" />
+              <Image src="../images/logo2.png" alt="Logo" className="h-20 w-auto" />
             </NavLink>
           </div>
           <div className="hidden sm:flex items-center space-x-4">

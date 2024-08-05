@@ -1,6 +1,7 @@
 
 import Head from 'next/head';
 import React from 'react';
+import Image from 'next/image';
 
 const teamMembers = [
   {
@@ -134,7 +135,7 @@ const AboutPage = () => {
             {teamMembers.map((member, index) => (
               <div key={index} className="w-full md:w-1/3 p-4">
                 <div className="bg-secondary-blue p-6 rounded-lg shadow-lg">
-                  <img src={member.image} alt={member.name} className="w-24 h-24 rounded-full mx-auto mb-4"/>
+                  <Image src={member.image} alt={member.name} className="w-24 h-24 rounded-full mx-auto mb-4"/>
                   <h3 className="text-2xl font-semibold mb-2">{member.name}</h3>
                   <p className="text-sm text-secondary-teal mb-2">{member.role}</p>
                   <p className="text-base">{member.bio}</p>
@@ -153,7 +154,7 @@ const AboutPage = () => {
             {boardMembers.map((member, index) => (
               <div key={index} className="w-full md:w-1/2 p-4">
                 <div className="bg-primary p-6 rounded-lg shadow-lg">
-                  <img src={member.image} alt={member.name} className="w-24 h-24 rounded-full mx-auto mb-4"/>
+                  <Image src={member.image} alt={member.name} className="w-24 h-24 rounded-full mx-auto mb-4"/>
                   <h3 className="text-2xl font-semibold mb-2 text-gray-800">{member.name}</h3>
                   <p className="text-sm mb-2 text-gray-800">{member.role}</p>
                   <p className="text-base text-gray-900">{member.bio}</p>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
-import { Line, Bar} from 'react-chartjs-2';
+import { Line, Bar } from 'react-chartjs-2';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 import {
@@ -10,6 +10,7 @@ import {
   LinearScale,
   PointElement,
   LineElement,
+  BarElement,
   Title,
   Tooltip,
   Legend,
@@ -20,10 +21,12 @@ ChartJS.register(
   LinearScale,
   PointElement,
   LineElement,
+  BarElement,
   Title,
   Tooltip,
   Legend
 );
+
 // Load Map dynamically to avoid SSR issues
 const Map = dynamic(() => import('react-map-gl'), { ssr: false });
 
@@ -107,14 +110,3 @@ const MapVisualizerPage = () => {
 };
 
 export default MapVisualizerPage;
-
-
-// to add
-
-// Additional Enhancements
-
-//     Dynamic Data: Fetch real-time climate data from an API.
-//     Map Markers: Add markers on the map to indicate specific climate events or data points.
-//     More Charts: Include additional charts for different climate parameters (e.g., CO2 levels, sea ice extent).
-//     Filters: Allow users to filter data based on regions, time periods, or climate parameters.
-//     Tooltips: Add tooltips to charts and maps for more detailed information.
