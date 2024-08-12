@@ -5,7 +5,7 @@ const events = [
       date: 'August 15, 2024',
       location: 'Online',
       description: 'Join us for a comprehensive conference on climate action, featuring expert speakers and panel discussions.',
-      image: '../../images/Online.jpg'
+      image: '/images/Online.jpg'
     },
     {
       id: 2,
@@ -13,7 +13,7 @@ const events = [
       date: 'September 22, 2024',
       location: 'New York, USA',
       description: 'A forum focused on global sustainability practices and innovative solutions to environmental challenges.',
-      image: '../../images/Newyork.jpg'
+      image: '/images/Newyork.jpg'
     },
     {
       id: 3,
@@ -21,7 +21,7 @@ const events = [
       date: 'October 10, 2024',
       location: 'Berlin, Germany',
       description: 'Explore the latest advancements in renewable energy technology at the Renewable Energy Expo.',
-      image: '../../images/Berlin.jpg'
+      image: '/images/Berlin.jpg'
     },
     {
       id: 4,
@@ -29,7 +29,7 @@ const events = [
       date: 'August 15, 2024',
       location: 'Online',
       description: 'A detailed discussion on climate action initiatives and how you can contribute.',
-      image: '../../images/Online.jpg'
+      image: '/images/Online.jpg'
     },
     {
       id: 5,
@@ -37,7 +37,7 @@ const events = [
       date: 'September 22, 2024',
       location: 'New York, USA',
       description: 'An in-depth look into global sustainability efforts and their impact on the environment.',
-      image: '../../images/Newyork.jpg'
+      image: '/images/Newyork.jpg'
     },
     {
       id: 6,
@@ -45,7 +45,7 @@ const events = [
       date: 'October 10, 2024',
       location: 'Berlin, Germany',
       description: 'A showcase of the latest renewable energy solutions and innovations.',
-      image: '../../images/Berlin.jpg'
+      image: '/images/Berlin.jpg'
     }
   ];
   

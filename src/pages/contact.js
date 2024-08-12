@@ -58,7 +58,7 @@ const ContactPage = () => {
       </section>
 
       {/* Contact form section */}
-      <main className="flex-grow flex items-center justify-center">
+      <main className="flex-grow flex items-center justify-center mt-4 mb-4">
         <div className="bg-white p-8 rounded-lg shadow-md w-11/12 md:w-8/12 lg:w-6/12 xl:w-5/12">
           <h2 className="text-2xl font-bold text-secondary-blue mb-6">Get in Touch</h2>
           <form onSubmit={handleSubmit} className="space-y-4">

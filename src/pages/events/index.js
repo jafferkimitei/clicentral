@@ -151,6 +151,7 @@ const EventsPage = () => {
                       src={event.image}
                       alt={event.title}
                       className="w-full h-full object-cover"
+                      width={100} height={100}
                     />
                     <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
                   </a>

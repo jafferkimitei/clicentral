@@ -8,19 +8,30 @@ const NewsPage = () => {
     <div className="bg-gray-100 min-h-screen">
       <Head>
         <title>News | Clicentral</title>
-        <meta name="description" content="Latest news on climate change and environmental actions." />
+        <meta
+          name="description"
+          content="Latest news on climate change and environmental actions."
+        />
       </Head>
 
       {/* Hero Section */}
       <section className="relative bg-cover bg-center py-20">
-        <video className="absolute inset-0 w-full h-full object-cover" autoPlay loop muted>
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+        >
           <source src="/videos/community-hero.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="container mx-auto text-center text-white relative z-10">
           <h1 className="text-4xl font-bold">Latest News</h1>
-          <p className="mt-4 text-lg">Stay updated with the latest news on climate change and environmental actions</p>
+          <p className="mt-4 text-lg">
+            Stay updated with the latest news on climate change and
+            environmental actions
+          </p>
         </div>
       </section>
 

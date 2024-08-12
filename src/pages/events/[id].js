@@ -32,6 +32,7 @@ const EventDetailPage = () => {
             src={event.image}
             alt={event.title}
             className="w-full h-96 object-cover rounded-lg shadow-md"
+            width={100} height={96}
           />
         </section>
 
@@ -70,7 +71,7 @@ const EventDetailPage = () => {
 
         {/* Related Events */}
         <section>
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-6 rounded-lg shadow-md mb-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Related Events</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {eventsData
@@ -83,7 +84,8 @@ const EventDetailPage = () => {
                     <Image
                       src={relatedEvent.image}
                       alt={relatedEvent.title}
-                      className="w-full h-48 object-cover rounded-lg mt-4 mb-2"
+                      className="w-full h-full object-cover rounded-lg mt-4 mb-2"
+                      width={100} height={100}
                     />
                     <a
                       href={`/events/${relatedEvent.id}`}

@@ -9,16 +9,23 @@ const NavBar = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    document.body.style.overflow = isOpen ? 'auto' : 'hidden';
   };
 
   return (
-    <nav className="bg-white w-full shadow">
+    <nav className="bg-white w-full shadow-md">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
             <NavLink href="/">
-              <Image src="../images/logo2.png" alt="Logo" className="h-20 w-auto" />
+              <Image 
+                src="/images/logo2.png" 
+                alt="Logo" 
+                width={80} 
+                height={80} 
+                className="h-20 w-auto" 
+              />
             </NavLink>
           </div>
           <div className="hidden sm:flex items-center space-x-4">
@@ -54,14 +61,33 @@ const NavBar = () => {
         </div>
         {/* Mobile menu */}
         {isOpen && (
-          <div className="sm:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              <NavLink href="/" active={router.pathname === '/'}>Home</NavLink>
-              <NavLink href="/about" active={router.pathname === '/about'}>About</NavLink>
-              <NavLink href="/news" active={router.pathname === '/news'}>News</NavLink>
-              <NavLink href="/events" active={router.pathname === '/events'}>Events</NavLink>
-              <NavLink href="/contact" active={router.pathname === '/contact'}>Contact</NavLink>
-            </div>
+          <div className="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center space-y-4">
+            <button
+              onClick={toggleMenu}
+              className="absolute top-4 right-4 p-2 text-black hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            >
+              <svg
+                className="h-8 w-8"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <ul className="space-y-4 text-center text-lg">
+              <li><NavLink href="/" active={router.pathname === '/'}>Home</NavLink></li>
+              <li><NavLink href="/about" active={router.pathname === '/about'}>About</NavLink></li>
+              <li><NavLink href="/news" active={router.pathname === '/news'}>News</NavLink></li>
+              <li><NavLink href="/events" active={router.pathname === '/events'}>Events</NavLink></li>
+              <li><NavLink href="/contact" active={router.pathname === '/contact'}>Contact</NavLink></li>
+            </ul>
           </div>
         )}
       </div>
